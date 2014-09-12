@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="bootstrap-theme.min.css">
+
+    <style>
+        .card {
+            box-shadow:inset 0 0 10px #000000;
+            background-color: deepskyblue;
+            margin: 50px;
+            height: 50px;
+            border: 15px solid gold;
+            border-radius: 15px;
+            height: 650px;
+            width: 450px;
+            font-family: "Gill Sans MT", Arial, Helvetica, sans-serif;
+        }
+
+        .titleCard {
+            font-weight: bold;
+            font-size: 2em;
+        }
+
+        .lvl {
+            font-weight: bold;
+        }
+
+        .hp {
+            font-weight: bold;
+            font-size: 2em;
+        }
+
+        .type {
+            position: relative;
+            top: -6px;
+        }
+
+        .lefHeader {
+            text-align: right;
+        }
+
+        .imgCard{
+            box-shadow:inset 0 0 10px #000000;
+            position: relative;
+            margin:0 auto;
+            border: 8px solid lightgray;
+            border-bottom-width:0;
+            background-image: url('pic.png');
+            width: 400px;
+            height: 253px;
+        }
+
+        .footerImgCard{
+            position: absolute;
+            left: -10px;
+            bottom: -2px;
+            box-shadow:inset 0 0 2px #000000;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 11px;
+            margin:0 auto;
+            width: 405px;
+            background-color: lightgray;
+        }
+
+        .basic{
+            position: absolute;
+            left: -2px;
+            top: -2px;
+            border-radius: 2px;
+            padding-left: 5px;
+            font-weight: bold;
+            font-size: 13px;
+            display: inline-block;
+            background-color: lightgray;
+            width: 70px;
+            height: 18px;
+        }
+
+
+        .atack {
+            margin-top: 15px;
+        }
+
+        .titleAtack {
+            font-weight: bold;
+            font-size: 23px;
+            position: relative;
+            left: -20px;
+        }
+
+        .imgAtack{
+            position: relative;
+            top: 5px;
+        }
+
+        .textAtack{
+            position: relative;
+            top: -2px;
+            padding-right: 2px;
+            font-size: 14px;
+            padding-right: 0;
+        }
+
+        .hit{
+            position: relative;
+            bottom: -4px;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .wrapperHit{
+            position: relative;
+        }
+
+        .plus{
+            position: absolute;
+            bottom: -4px;
+            right: -1px;
+            font-size: 17px;
+        }
+
+        .line{
+            margin-top: 15px;
+            box-shadow:inset 0 0 1px #000000;
+            background-color: lightgray;
+            height: 2px;
+            border-radius: 2px;
+        }
+
+        .textabout{
+            border-top: 5px solid lightgray;
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+
+        .author{
+            position: relative;
+            border-radius: 2px;
+            padding-left: 5px;
+            font-size: 13px;
+            background-color: lightgray;
+            width: 240px;
+            display: inline-block;
+            height: 17px;
+            padding-right: 13px;
+            text-align: right;
+            margin-top: 15px;
+            margin-bottom: 6px;
+            right: 240px;
+        }
+
+        .footerFonts{
+           margin-top: 5px;
+           text-align: center;
+            font-size: 13px;
+           font-weight: bold;
+        }
+        .imgFooter{
+            text-align: center;
+        }
+
+        .imgFooter{
+            text-align: center;
+        }
+
+        .footDamage{
+            font-weight: bold;
+            position: relative;
+            top: 2px;
+        }
+
+        .damage{
+          padding-left: 25px;
+        }
+
+        .footerText{
+            margin-top: 3px;
+            font-size: 12px;
+        }
+
+        .cornerCircle{
+            position: relative;
+            top: -2px;
+        }
+
+        .rightText{
+            text-align: right;
+            position: relative;
+            right: -11px;
+        }
+
+        .centerText{
+            position: relative;
+            left: 30px;
+        }
+
+
+        body {
+            background-color: gray;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container  card">
+    <div class="row">
+        <div class="col-xs-6">
+            <span class="titleCard">Squirtle</span>
+            <span class="lvl">lvl15</span>
+        </div>
+        <div class="col-xs-6">
+            <div class="lefHeader">
+                <span class="lvl">hp</span>
+                <span class="hp">50</span>
+                <img class="type" src="agua.png" height="30" width="30px">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+            <div class="imgCard">
+                <span class="basic">BASIC</span>
+                <div class="footerImgCard">
+                    <span>NO. 007 Tinyturtle Pokemon HT: 1'08* WT: 12.8 lbs</span>
+                </div>
+            </div>
+    </div>
+    <div class="row">
+        <div class="atack">
+            <div class="col-xs-3">
+                <img class="imgAtack" src="agua.png" height="23" width="23">
+            </div>
+            <div class="col-xs-9">
+                <span class="titleAtack">Bubble</span>
+            </div>
+            <div class="col-xs-12 textAtack">
+             Flip a coin. If heads, the Defending Pokemon is now Paralyzed.
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="atack">
+            <div class="col-xs-3">
+                <img class="imgAtack" src="agua.png" height="23" width="23">
+                <img class="imgAtack" src="normal.png" height="23" width="23">
+            </div>
+            <div class="col-xs-7">
+                <span class="titleAtack">Aqua Tail</span>
+            </div>
+            <div class="col-xs-2 ">
+                <div class="wrapperHit">
+                    <span class="hit">20</span>
+                    <span class="plus">+</span>
+                </div>
+            </div>
+            <div class="col-xs-12 textAtack">
+                Flip a coin for each
+                Energy <img src="gota.png" width="17px" height="17px" /> attached to Squrtle.This attack
+                does 20 damage plus 10 more damage for each heads.
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-10">
+            <div class="line">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-10">
+            <div class="textabout textAtack">
+                It shelters itself in its shell, then strikes back with spouts of
+                water at every opportunity.
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+            <div class="col-xs-offset-11 col-xs-1">
+                <span class="author">Illus. Kagemaru Himeno</span>
+            </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-4 footerFonts">
+           weakness
+        </div>
+        <div class="col-xs-4 footerFonts">
+           resistance
+        </div>
+        <div class="col-xs-4 footerFonts">
+            retreat cost
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-4">
+            <div class="imgFooter damage">
+                <img src="raio.png" height="23" width="23">
+                <span class="footDamage">+10</span>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="imgFooter">
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="imgFooter">
+                <img src="normal.png" height="23" width="23">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-3">
+            <div class="footerText">
+                DBBP#007
+            </div>
+        </div>
+        <div class="col-xs-5">
+            <div class="footerText centerText">
+                2007 Pokemon/Nintendo
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="footerText rightText">
+                112/132&#9679;
+                <img class="cornerCircle" src="some.png" height="23" width="23">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+</body>
+</html>

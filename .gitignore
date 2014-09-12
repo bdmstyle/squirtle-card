@@ -1,0 +1,9 @@
+*.iml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/dataSources.xml
+*.idea*
+.project
+db.*
+target
+bin
+.idea
