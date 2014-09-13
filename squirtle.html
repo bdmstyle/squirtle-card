@@ -20,7 +20,7 @@
             height: 50px;
             border: 15px solid gold;
             border-radius: 15px;
-            height: 650px;
+            height: 610px;
             width: 450px;
             font-family: "Gill Sans MT", Arial, Helvetica, sans-serif;
         }
@@ -37,11 +37,13 @@
         .hp {
             font-weight: bold;
             font-size: 2em;
+            position: relative;
+            top: 3px;
         }
 
         .type {
             position: relative;
-            top: -6px;
+            top: -3px;
         }
 
         .lefHeader {
@@ -60,30 +62,34 @@
         }
 
         .footerImgCard{
+
             position: absolute;
-            left: -10px;
-            bottom: -2px;
-            box-shadow:inset 0 0 2px #000000;
-            border-radius: 10px;
+            left: -11px;
+            bottom: -10px;
             text-align: center;
-            font-size: 11px;
+            font-size: 10px;
             margin:0 auto;
-            width: 405px;
-            background-color: lightgray;
+            width: 404px;
+            height: 18px;
+            font-style: italic;
+            line-height: 2;
+            border-radius: 175px 20px 266px 132px;
+            background-image: url("autorline.png");
         }
 
         .basic{
             position: absolute;
-            left: -2px;
-            top: -2px;
-            border-radius: 2px;
-            padding-left: 5px;
+            left: -14px;
+            top: -10px;
+            padding-left: 10px;
             font-weight: bold;
             font-size: 13px;
             display: inline-block;
-            background-color: lightgray;
-            width: 70px;
-            height: 18px;
+            border-radius: 132px 20px 136px 1px;
+            background-image: url("autorline.png");
+            width: 85px;
+            line-height: 1.7;
+            height: 19px;
         }
 
 
@@ -113,64 +119,51 @@
 
         .hit{
             position: relative;
-            bottom: -4px;
+            bottom: -5px;
+            left: 10px;
             font-weight: bold;
-            font-size: 25px;
-        }
-
-        .wrapperHit{
-            position: relative;
-        }
-
-        .plus{
-            position: absolute;
-            bottom: -4px;
-            right: -1px;
-            font-size: 17px;
+            font-size: 20px;
         }
 
         .line{
             margin-top: 15px;
-            box-shadow:inset 0 0 1px #000000;
-            background-color: lightgray;
-            height: 2px;
-            border-radius: 2px;
+            margin-bottom: 3px;
+            border-radius: 132px 20px 266px 132px;
+            height: 5px;
         }
 
         .textabout{
-            border-top: 5px solid lightgray;
             margin: 0 auto;
             border-radius: 2px;
         }
 
         .author{
+            border-radius: 199px 20px 266px 132px;
+            background-image: url("authorBackground.png");
+            line-height: 1.8;
             position: relative;
-            border-radius: 2px;
+            font-style: italic;
             padding-left: 5px;
-            font-size: 13px;
-            background-color: lightgray;
-            width: 240px;
+            font-size: 9px;
+            width: 210px;
             display: inline-block;
-            height: 17px;
+            height: 14px;
             padding-right: 13px;
             text-align: right;
-            margin-top: 15px;
-            margin-bottom: 6px;
-            right: 240px;
+            margin-top: 5px;
+            right: 212px;
         }
 
         .footerFonts{
            margin-top: 5px;
            text-align: center;
-            font-size: 13px;
+            font-size: 10px;
            font-weight: bold;
         }
         .imgFooter{
             text-align: center;
-        }
-
-        .imgFooter{
-            text-align: center;
+            position: relative;
+            top:-8px;
         }
 
         .footDamage{
@@ -184,29 +177,47 @@
         }
 
         .footerText{
-            margin-top: 3px;
-            font-size: 12px;
+            position: relative;
+            top: -5px;
+            font-size: 10px;
         }
 
         .cornerCircle{
             position: relative;
-            top: -2px;
+            top: -13px;
+            right: -58px;
         }
 
         .rightText{
             text-align: right;
             position: relative;
-            right: -11px;
+            top: -6px;
+            font-size: 11px;
+            font-weight: bold;
+            right: -38px;
         }
 
-        .centerText{
+        .centerText {
             position: relative;
-            left: 30px;
+            left: 43px;
+            font-size: 9px;
         }
 
+        .leftText{
+            font-weight: bold;
+            font-size: 9px;
+
+        }
+
+        .plus{
+            position: relative;
+            font-size: 16px;
+            left: 7px;
+            top: 6px;
+        }
 
         body {
-            background-color: gray;
+            background-color: #ffffff;
         }
 
     </style>
@@ -230,12 +241,12 @@
             <div class="imgCard">
                 <span class="basic">BASIC</span>
                 <div class="footerImgCard">
-                    <span>NO. 007 Tinyturtle Pokemon HT: 1'08* WT: 12.8 lbs</span>
+                    <span>NO. 007 Tinyturtle Pokemon HT: 1'08* WT: 12.8 lbs.</span>
                 </div>
             </div>
     </div>
     <div class="row">
-        <div class="atack">
+        <div class="atack" style="padding-top: 4px">
             <div class="col-xs-3">
                 <img class="imgAtack" src="agua.png" height="23" width="23">
             </div>
@@ -249,7 +260,7 @@
     </div>
 
     <div class="row">
-        <div class="atack">
+        <div class="atack" style="position: relative;top : -5px;">
             <div class="col-xs-3">
                 <img class="imgAtack" src="agua.png" height="23" width="23">
                 <img class="imgAtack" src="normal.png" height="23" width="23">
@@ -257,15 +268,13 @@
             <div class="col-xs-7">
                 <span class="titleAtack">Aqua Tail</span>
             </div>
-            <div class="col-xs-2 ">
-                <div class="wrapperHit">
-                    <span class="hit">20</span>
-                    <span class="plus">+</span>
-                </div>
+            <div class="col-xs-2">
+                <span class="hit" >20</span>
+                <span class="plus" >+</span>
             </div>
             <div class="col-xs-12 textAtack">
-                Flip a coin for each
-                Energy <img src="gota.png" width="17px" height="17px" /> attached to Squrtle.This attack
+                Flip a coin for each <img src="gota.png" width="17px" height="17px" />
+                Energy attached to Squrtle.This attack
                 does 20 damage plus 10 more damage for each heads.
             </div>
         </div>
@@ -273,14 +282,16 @@
 
     <div class="row">
         <div class="col-xs-10">
-            <div class="line">
+            <div>
+                <img class="line" src="authorBackground.png"
+                     width="335px"/>
             </div>
         </div>
     </div>
 
     <div class="row">
         <div class="col-xs-10">
-            <div class="textabout textAtack">
+            <div class="textabout textAtack" style="font-style: italic;font-size: 12px;">
                 It shelters itself in its shell, then strikes back with spouts of
                 water at every opportunity.
             </div>
@@ -293,7 +304,7 @@
             </div>
     </div>
 
-    <div class="row">
+    <div class="row" style="position: relative;top:-6px">
         <div class="col-xs-4 footerFonts">
            weakness
         </div>
@@ -308,7 +319,7 @@
     <div class="row">
         <div class="col-xs-4">
             <div class="imgFooter damage">
-                <img src="raio.png" height="23" width="23">
+                <img src="raio.png" height="20" width="20">
                 <span class="footDamage">+10</span>
             </div>
         </div>
@@ -318,14 +329,14 @@
         </div>
         <div class="col-xs-4">
             <div class="imgFooter">
-                <img src="normal.png" height="23" width="23">
+                <img src="normal.png" height="20" width="20">
             </div>
         </div>
     </div>
 
     <div class="row">
         <div class="col-xs-3">
-            <div class="footerText">
+            <div class="footerText leftText">
                 DBBP#007
             </div>
         </div>
@@ -335,11 +346,15 @@
             </div>
         </div>
         <div class="col-xs-4">
+            <div class="col-xs-2">
             <div class="footerText rightText">
                 112/132&#9679;
-                <img class="cornerCircle" src="some.png" height="23" width="23">
             </div>
-        </div>
+            </div>
+            <div class="col-xs-2">
+                <img class="cornerCircle" src="some.png" height="20" width="20">
+            </div>
+            </div>
     </div>
 
 </div>
