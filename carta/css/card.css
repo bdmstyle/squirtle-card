@@ -78,61 +78,54 @@ body {
   border-radius: 175px 20px 266px 132px;
   background-image: url("../images/backgroundLine.png");
 }
-.card .firstAtack {
-  margin-top: 15px;
-  padding-top: 4px;
-}
-.card .firstAtack .title {
+.card .atackArea .title {
   font-weight: bold;
   font-size: 23px;
   position: relative;
   left: -20px;
 }
-.card .firstAtack img {
+.card .atackArea .firstAtack {
+  margin-top: 15px;
+  padding-top: 4px;
+}
+.card .atackArea .firstAtack img {
   position: relative;
   top: 5px;
   height: 23px;
   width: 23px;
 }
-.card .firstAtack .atackDescription {
+.card .atackArea .firstAtack .atackDescription {
   position: relative;
   top: -2px;
   font-size: 14px;
   padding-right: 0;
 }
-.card .secondAtack {
+.card .atackArea .secondAtack {
   position: relative;
   top: -5px;
   margin-top: 15px;
 }
-.card .secondAtack .title {
-  font-weight: bold;
-  font-size: 23px;
-  position: relative;
-  left: -20px;
-}
-.card .secondAtack .imgAtack {
-  position: relative;
-  top: 5px;
-}
-.card .secondAtack .hit {
+.card .atackArea .secondAtack .hit {
   position: relative;
   bottom: -5px;
   left: 10px;
   font-weight: bold;
   font-size: 20px;
 }
-.card .secondAtack .plus {
+.card .atackArea .secondAtack .plus {
   position: relative;
   font-size: 16px;
   left: 7px;
   top: 6px;
 }
-.card .secondAtack img {
+.card .atackArea .secondAtack img {
   height: 23px;
   width: 23px;
 }
-.card .secondAtack .iconType {
+.card .atackArea .secondAtack .iconType {
+  position: relative;
+  top: -3px;
+  right: -1px;
   width: 17px;
   height: 17px;
 }

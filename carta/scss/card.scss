@@ -2,13 +2,6 @@ body {
   background-color: #ffffff;
 }
 
-@mixin title() {
-  font-weight: bold;
-  font-size: 23px;
-  position: relative;
-  left: -20px;
-}
-
 .card {
   box-shadow: inset 0 0 10px #000000;
   background-color: deepskyblue;
@@ -98,67 +91,68 @@ body {
 
   }
 
-  .firstAtack {
-    margin-top: 15px;
-    padding-top: 4px;
+  .atackArea {
 
     .title {
-      @include title();
-    }
-
-    img {
-      position: relative;
-      top: 5px;
-      height: 23px;
-      width: 23px
-    }
-
-    .atackDescription {
-      position: relative;
-      top: -2px;
-      font-size: 14px;
-      padding-right: 0;
-    }
-
-  }
-
-  .secondAtack {
-    position: relative;
-    top: -5px;
-    margin-top: 15px;
-
-    .title {
-      @include title();
-    }
-
-    .imgAtack {
-      position: relative;
-      top: 5px;
-    }
-
-    .hit {
-      position: relative;
-      bottom: -5px;
-      left: 10px;
       font-weight: bold;
-      font-size: 20px;
-    }
-
-    .plus {
+      font-size: 23px;
       position: relative;
-      font-size: 16px;
-      left: 7px;
-      top: 6px;
+      left: -20px;
     }
 
-    img {
-      height: 23px;
-      width: 23px
+    .firstAtack {
+      margin-top: 15px;
+      padding-top: 4px;
+
+      img {
+        position: relative;
+        top: 5px;
+        height: 23px;
+        width: 23px
+      }
+
+      .atackDescription {
+        position: relative;
+        top: -2px;
+        font-size: 14px;
+        padding-right: 0;
+      }
+
     }
 
-    .iconType {
-      width: 17px;
-      height: 17px
+    .secondAtack {
+      position: relative;
+      top: -5px;
+      margin-top: 15px;
+
+      .hit {
+        position: relative;
+        bottom: -5px;
+        left: 10px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .plus {
+        position: relative;
+        font-size: 16px;
+        left: 7px;
+        top: 6px;
+      }
+
+      img {
+        height: 23px;
+        width: 23px
+      }
+
+      .iconType {
+        position: relative;
+        top: -3px;
+        right: -1px;
+        width: 17px;
+        height: 17px
+      }
+
     }
 
   }
