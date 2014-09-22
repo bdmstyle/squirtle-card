@@ -82,17 +82,17 @@ body {
   margin-top: 15px;
   padding-top: 4px;
 }
-.card .firstAtack img {
-  position: relative;
-  top: 5px;
-  height: 23px;
-  width: 23px;
-}
 .card .firstAtack .title {
   font-weight: bold;
   font-size: 23px;
   position: relative;
   left: -20px;
+}
+.card .firstAtack img {
+  position: relative;
+  top: 5px;
+  height: 23px;
+  width: 23px;
 }
 .card .firstAtack .atackDescription {
   position: relative;
@@ -105,31 +105,118 @@ body {
   top: -5px;
   margin-top: 15px;
 }
+.card .secondAtack .title {
+  font-weight: bold;
+  font-size: 23px;
+  position: relative;
+  left: -20px;
+}
 .card .secondAtack .imgAtack {
   position: relative;
   top: 5px;
 }
-
-.hit {
+.card .secondAtack .hit {
   position: relative;
   bottom: -5px;
   left: 10px;
   font-weight: bold;
   font-size: 20px;
 }
-
-.titleAtack {
-  font-weight: bold;
-  font-size: 23px;
-  position: relative;
-  left: -20px;
-}
-
-.plus {
+.card .secondAtack .plus {
   position: relative;
   font-size: 16px;
   left: 7px;
   top: 6px;
+}
+.card .secondAtack img {
+  height: 23px;
+  width: 23px;
+}
+.card .secondAtack .iconType {
+  width: 17px;
+  height: 17px;
+}
+.card .textAboutPokemon {
+  font-style: italic;
+  font-size: 12px;
+}
+.card .textAboutPokemon img {
+  margin-top: 15px;
+  margin-bottom: 3px;
+  border-radius: 132px 20px 266px 132px;
+  height: 5px;
+  width: 335px;
+}
+.card .author span {
+  border-radius: 199px 20px 266px 132px;
+  background-image: url("../images/authorBackground.png");
+  line-height: 1.8;
+  position: relative;
+  font-style: italic;
+  padding-left: 5px;
+  font-size: 9px;
+  width: 210px;
+  display: inline-block;
+  height: 14px;
+  padding-right: 13px;
+  text-align: right;
+  margin-top: 5px;
+  right: 212px;
+}
+.card .footer {
+  font-weight: bold;
+}
+.card .footer .footerTitle {
+  position: relative;
+  top: -6px;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 10px;
+}
+.card .footer .footerBody {
+  text-align: center;
+  position: relative;
+  top: -8px;
+}
+.card .footer .footerBody .typeDamage {
+  padding-left: 39px;
+}
+.card .footer .footerBody .typeDamage span {
+  position: relative;
+  top: 2px;
+}
+.card .footer .footerBody img {
+  height: 20px;
+  width: 20px;
+}
+.card .footer .footerLastLine {
+  position: relative;
+  top: -5px;
+  font-size: 10px;
+  font-weight: bold;
+}
+.card .footer .footerLastLine .centerText {
+  position: relative;
+  left: 43px;
+  font-size: 9px;
+  font-weight: normal;
+}
+.card .footer .footerLastLine .leftText {
+  font-size: 9px;
+}
+.card .footer .footerLastLine .rightText {
+  text-align: right;
+  position: relative;
+  top: -1px;
+  font-size: 11px;
+  right: -38px;
+}
+.card .footer .footerLastLine img {
+  position: relative;
+  top: -7px;
+  right: -58px;
+  height: 20px;
+  width: 20px;
 }
 
 /*# sourceMappingURL=card.css.map */

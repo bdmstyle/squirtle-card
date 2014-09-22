@@ -2,6 +2,13 @@ body {
   background-color: #ffffff;
 }
 
+@mixin title() {
+  font-weight: bold;
+  font-size: 23px;
+  position: relative;
+  left: -20px;
+}
+
 .card {
   box-shadow: inset 0 0 10px #000000;
   background-color: deepskyblue;
@@ -75,7 +82,6 @@ body {
     }
 
     .description {
-
       position: absolute;
       left: -11px;
       bottom: -10px;
@@ -93,9 +99,12 @@ body {
   }
 
   .firstAtack {
-
     margin-top: 15px;
     padding-top: 4px;
+
+    .title {
+      @include title();
+    }
 
     img {
       position: relative;
@@ -103,12 +112,7 @@ body {
       height: 23px;
       width: 23px
     }
-    .title {
-      font-weight: bold;
-      font-size: 23px;
-      position: relative;
-      left: -20px;
-    }
+
     .atackDescription {
       position: relative;
       top: -2px;
@@ -118,40 +122,148 @@ body {
 
   }
 
-  .secondAtack{
+  .secondAtack {
     position: relative;
     top: -5px;
     margin-top: 15px;
+
+    .title {
+      @include title();
+    }
 
     .imgAtack {
       position: relative;
       top: 5px;
     }
 
+    .hit {
+      position: relative;
+      bottom: -5px;
+      left: 10px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .plus {
+      position: relative;
+      font-size: 16px;
+      left: 7px;
+      top: 6px;
+    }
+
+    img {
+      height: 23px;
+      width: 23px
+    }
+
+    .iconType {
+      width: 17px;
+      height: 17px
+    }
+
+  }
+
+  .textAboutPokemon {
+    font-style: italic;
+    font-size: 12px;
+
+    img {
+      margin-top: 15px;
+      margin-bottom: 3px;
+      border-radius: 132px 20px 266px 132px;
+      height: 5px;
+      width: 335px
+    }
+  }
+
+  .author {
+
+    span {
+      border-radius: 199px 20px 266px 132px;
+      background-image: url("../images/authorBackground.png");
+      line-height: 1.8;
+      position: relative;
+      font-style: italic;
+      padding-left: 5px;
+      font-size: 9px;
+      width: 210px;
+      display: inline-block;
+      height: 14px;
+      padding-right: 13px;
+      text-align: right;
+      margin-top: 5px;
+      right: 212px;
+    }
+
+  }
+
+  .footer {
+    font-weight: bold;
+
+    .footerTitle {
+      position: relative;
+      top: -6px;
+      margin-top: 5px;
+      text-align: center;
+      font-size: 10px;
+    }
+    .footerBody {
+      text-align: center;
+      position: relative;
+      top: -8px;
+
+      .typeDamage {
+        padding-left: 39px;
+
+        span {
+          position: relative;
+          top: 2px;
+        }
+
+      }
+
+      img {
+        height: 20px;
+        width: 20px
+      }
+
+    }
+
+    .footerLastLine {
+      position: relative;
+      top: -5px;
+      font-size: 10px;
+      font-weight: bold;
+
+      .centerText {
+        position: relative;
+        left: 43px;
+        font-size: 9px;
+        font-weight: normal;
+      }
+
+      .leftText {
+        font-size: 9px;
+      }
+
+      .rightText {
+        text-align: right;
+        position: relative;
+        top: -1px;
+        font-size: 11px;
+        right: -38px;
+      }
+
+      img {
+        position: relative;
+        top: -7px;
+        right: -58px;
+        height: 20px;
+        width: 20px
+      }
+
+    }
 
   }
 }
 
-
-.hit {
-  position: relative;
-  bottom: -5px;
-  left: 10px;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-
-.titleAtack {
-  font-weight: bold;
-  font-size: 23px;
-  position: relative;
-  left: -20px;
-}
-
-.plus {
-  position: relative;
-  font-size: 16px;
-  left: 7px;
-  top: 6px;
-}
